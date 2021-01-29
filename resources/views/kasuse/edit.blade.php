@@ -18,33 +18,33 @@
                 <form  action="{{route('kasuse.update',$kasuse->id)}}" method="post">
                 <input type="hidden" name="_method" value="PUT">
                     @csrf
-                     <div class="form-group">
-                        <label for="">RW</label>
-                        <select name="id_rw" class="form-control" required>
-                            @foreach($r_w_ as $data)
-                            <option value="{{$data->id}}"
-                                {{$data->id == $kasuse->id_rw ? "selected":""}}>{{$data->nama_rw}}</option>
-                            @endforeach
-                        </select>
-                    </div>
+                    
+                @livewireStyles
+
+                @livewireScripts
+                @method('PUT')
+                <div>
+                @livewire('select',['selectedRw'=> $kasuse->id_rw])
+                </div>
+
                       <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Positif</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" name="positif"
+                        <input  class="form-control" id="exampleInputPassword1" name="positif"
                         value="{{$kasuse->positif}}"required>
                     </div>
                      </div>
                      <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Sembuh</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" name="sembuh"
+                        <input  class="form-control" id="exampleInputPassword1" name="sembuh"
                         value="{{$kasuse->sembuh}}"required>
                     </div>
                      </div>
                      <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Meninggal</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" name="meninggal"
+                        <input  class="form-control" id="exampleInputPassword1" name="meninggal"
                         value="{{$kasuse->meninggal}}"required>
                     </div>
                      </div>

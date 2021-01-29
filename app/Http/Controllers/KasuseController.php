@@ -46,11 +46,25 @@ class KasuseController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'positif'      => 'required',
+            'sembuh'      => 'required',
+            'meninggal'      => 'required',
+            'tanggal'      => 'required',
+
+
+        ],  [
+            'positif.required'          => 'Wajib diisi.',
+            'sembuh.required'          => 'Wajib diisi.',
+            'meninggal.required'          => 'Wajib diisi.',
+            'tanggal.required'          => 'Wajib diisi.',
+
+        ]);
         $kasuse= new Kasuse();
         $kasuse->id_rw = $request->id_rw;
         $kasuse->positif = $request->positif;
-        $kasuse->meninggal = $request->meninggal;
         $kasuse->sembuh = $request->sembuh;
+        $kasuse->meninggal = $request->meninggal;
         $kasuse->tanggal = $request->tanggal;
         $kasuse->save();
         return redirect()->route('kasuse.index')
