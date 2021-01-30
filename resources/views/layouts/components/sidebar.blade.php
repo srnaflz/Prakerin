@@ -24,10 +24,7 @@
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Kasus Lokal</span>
-                <i class="menu-arrow"></i>
-                <i class="mdi mdi-table-large menu-icon"></i>
               </a>
-              <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item"> <a class="nav-link" href="{{route('provinsi.index')}}">Provinsi</a></li>
                   <li class="nav-item"> <a class="nav-link" href="{{route('kota.index')}}">Kota</a></li>
@@ -36,7 +33,6 @@
                   <li class="nav-item"> <a class="nav-link" href="{{route('rw.index')}}">Rw</a></li>
                   <li class="nav-item"> <a class="nav-link" href="{{route('kasuse.index')}}">Kasus</a></li>
                 </ul>
-              </div>
             </li>
       
           
@@ -44,15 +40,11 @@
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
                 <span class="menu-title">Kasus Global</span>
-                <i class="menu-arrow"></i>
-                <i class="mdi mdi-table-large menu-icon"></i>
               </a>
-              <div class="collapse" id="general-pages">
                 <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Negara</a></li>
                   <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Kasus</a></li>
                 </ul>
-              </div>
             </li>
 
             <li class="nav-item">

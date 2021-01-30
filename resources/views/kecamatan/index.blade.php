@@ -13,13 +13,15 @@
                 <a href="{{route('kecamatan.create')}}" class="btn btn-primary float-right"> Add Data </a>
 
                 <div class="card-body" >
+                <div class="table-responsive">
+
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                             
                         </div>
                     @endif
-                    <table class="table table-dark table-hover" id="e">
+                    <table class="table table-bordered" id="e">
                             <thead>
                                 <tr>
                                     <th>Nomor</th>
@@ -55,6 +57,8 @@
                 </div>
             </div>
         </div>
+        </div>
+
     </div>
 </div>
 @endsection

@@ -9,10 +9,10 @@
                 <div class="card-header">{{ __('Kasus') }} 
                 </div>
                 
-                <div class="card ">
                 <a href="{{route('kasuse.create')}}" class="btn btn-primary float-right"> Add Data </a>
 
-                <div class="card-body"  >
+                <div class="card-body" >
+                    <div class="table-responsive">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
