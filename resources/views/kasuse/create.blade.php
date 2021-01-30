@@ -27,29 +27,37 @@
                       <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Positif</label>
-                        <input   value="{{@old('positif')}}" class="form-control" id="exampleInputPassword1" name="positif"
-                        required>
+                        <input   value="{{@old('positif')}}" class="form-control" id="exampleInputPassword1" name="positif">
+                        @error('positif')
+                      <div class="alert  alert-danger">{{$message}}</div>
+                      @enderror
                     </div>
                      </div>
                      <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Sembuh</label>
-                        <input   value="{{@old('sembuh')}}" class="form-control" id="exampleInputPassword1" name="sembuh"
-                        required>
+                        <input   value="{{@old('sembuh')}}" class="form-control" id="exampleInputPassword1" name="sembuh">
+                        @error('sembuh')
+                      <div class="alert  alert-danger">{{$message}}</div>
+                      @enderror
                     </div>
                      </div>
                      <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Meninggal</label>
-                        <input   value="{{@old('meninggal')}}" class="form-control" id="exampleInputPassword1" name="meninggal"
-                        required>
+                        <input   value="{{@old('meninggal')}}" class="form-control" id="exampleInputPassword1" name="meninggal">
+                        @error('meninggal')
+                      <div class="alert  alert-danger">{{$message}}</div>
+                      @enderror
                     </div>
                      </div>
                      <div class="form-group">
                     <div class="mb-12>
                         <label for="exampleInputPassword1" class="form-label">Tanggal</label>
-                        <input type="date"  value="{{@old('tanggal')}}" class="form-control" id="exampleInputPassword1" name="tanggal"
-                        required>
+                        <input type="date"  value="{{@old('tanggal')}}" class="form-control" id="exampleInputPassword1" name="tanggal">
+                        @error('tanggal')
+                      <div class="alert  alert-danger">{{$message}}</div>
+                      @enderror
                     </div>
                      </div>
                     <div class="form-group">

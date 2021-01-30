@@ -4,25 +4,26 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-13">
             <div class="card">
                 <div class="card-header">{{ __('Kasus') }} 
                 </div>
                 
-                <div class="card">
+                <div class="card ">
                 <a href="{{route('kasuse.create')}}" class="btn btn-primary float-right"> Add Data </a>
 
-                <div class="card-body" >
+                <div class="card-body"  >
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                             
                         </div>
                     @endif
-                    <table class="table table-dark table-hover">
+                    <table class="table table-dark table-hover " id ="e" >
                             <thead>
                                 <tr>
                                     <th>Nomor</th>
+                                    <th>Lokasi</th>
                                     <th>Rw</th>
                                     <th>Positif</th>
                                     <th>Sembuh</th>
@@ -36,6 +37,12 @@
                                 @foreach($kasuse as $data)
                                 <tr>
                                     <td>{{$no++}}</td>
+                                    <td>
+                                    Provinsi  : {{$data->r_w_->kelurahan->kecamatan->kota->provinsi->nama_provinsi}}<br><br>
+                                    Kota      : {{$data->r_w_->kelurahan->kecamatan->kota->nama_kota}}<br><br>
+                                    Kecamatan : {{$data->r_w_->kelurahan->kecamatan->nama_kecamatan}}<br><br>
+                                    Kelurahan : {{$data->r_w_->kelurahan->nama_kelurahan}}<br><br>
+                                    </td>
                                     <td>{{$data->r_w_->nama_rw}}</td>
                                     <td>{{$data->positif}}</td>
                                     <td>{{$data->sembuh}}</td>

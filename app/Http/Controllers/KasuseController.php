@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\R_w_;
 use App\Models\Kasuse;
+
 use App\Http\Controllers\DB;
 use Illuminate\Http\Request;
 
@@ -21,7 +22,7 @@ class KasuseController extends Controller
     {
         //
         
-        $kasuse = Kasuse::with('r_w_')->get();
+        $kasuse = Kasuse::with('r_w_.kelurahan.kecamatan.kota.provinsi')->get();
         return view('kasuse.index',compact('kasuse'));
     }
 
@@ -93,9 +94,9 @@ class KasuseController extends Controller
     public function edit($id)
     {
         //
-        $r_w_ = R_w_::all();
+       // $r_w_ = R_w_::all();
         $kasuse = Kasuse::findOrFail($id);
-        return view('kasuse.edit',compact('kasuse','r_w_'));
+        return view('kasuse.edit',compact('kasuse'));
     }
 
     /**
@@ -109,7 +110,7 @@ class KasuseController extends Controller
     {
         //
         $kasuse = Kasuse::findOrFail($id);
-        $kasuse->id_rw = $request->id_rw;
+        //$kasuse->id_rw = $request->id_rw;
         $kasuse->positif = $request->positif;
         $kasuse->meninggal = $request->meninggal;
         $kasuse->sembuh = $request->sembuh;

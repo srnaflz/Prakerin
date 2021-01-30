@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-11">
+        <div class="col-md-14">
             <div class="card">
                 <div class="card-header">{{ __('Kota') }} 
                 </div>
@@ -19,7 +19,7 @@
                             
                         </div>
                     @endif
-                    <table class="table table-dark table-hover">
+                    <table class="table table-dark table-hover" id="e">
                             <thead>
                                 <tr>
                                     <th>Nomor</th>

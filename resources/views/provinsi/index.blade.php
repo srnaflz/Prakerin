@@ -19,7 +19,7 @@
                             
                         </div>
                     @endif
-                    <table class="table table-dark table-hover">
+                    <table class="table table-dark table-hover" id="e">
                             <thead>
                                 <tr>
                                     <th>Nomor</th>

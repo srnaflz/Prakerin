@@ -8,6 +8,9 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('assets2/assets/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets2/assets/vendors/css/vendor.bundle.base.css')}}">
+     <!-- data table -->
+     <link rel="stylesheet" href="{{asset('assets2/assets/css/dataTables.bootstrap4.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets2/assets/css/bootstrap.min.css')}}"/>
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -86,5 +89,17 @@
     <script src="{{asset('assets2/assets/js/dashboard.js')}}"></script>
     <script src="{{asset('assets2/assets/js/todolist.js')}}"></script>
     <!-- End custom js for this page -->
+     <!-- data table -->
+     <script src="{{asset('assets2/assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('assets2/assets/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{asset('assets2/assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets2/assets/js/jquery-3.3.1.js')}}"></script>
+    <script src="{{asset('assets2/assets/js/jquery.dataTables.min.js')}}"></script> 
+    <script src="{{asset('assets2/assets/js/dataTables.bootstrap4.min.js')}}"></script>
   </body>
+  <script>
+$(document).ready(function() {
+    $('#e').DataTable();
+} );
+</script>
 </html> 

@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Data Rw') }} 
+                <div class="card-header">{{ __('Data Kasus') }} 
                 </div>
                 
                 <div class="card">
@@ -24,7 +24,11 @@
                 @livewireScripts
                 @method('PUT')
                 <div>
-                @livewire('select',['selectedRw'=> $kasuse->id_rw])
+                @livewire('select',['selectedRw'=> $kasuse->id_rw,
+                'selectedState4'=> $kasuse->r_w_->kelurahan->id_kelurahan,
+                'selectedState3'=> $kasuse->r_w_->kelurahan->kecamatan->id_kecamatan,
+                'selectedState2'=> $kasuse->r_w_->kelurahan->kecamatan->kota->id_kota,
+                'selectedState'=> $kasuse->r_w_->kelurahan->kecamatan->kota->provinsi->id_provinsi])
                 </div>
 
                       <div class="form-group">
