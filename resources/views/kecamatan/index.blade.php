@@ -24,22 +24,22 @@
                     <table class="table table-bordered" id="e">
                             <thead>
                                 <tr>
-                                    <th>Nomor</th>
-                                    <th>Nama Kota</th>
-                                    <th>kode Kecamatan</th>
-                                    <th>Nama Kecamatan</th>
-                                    <th>Action</th>
+                                    <th scope="col">Nomor</th>
+                                    <th scope="col">Nama Kota</th>
+                                    <th scope="col">kode Kecamatan</th>
+                                    <th scope="col">Nama Kecamatan</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @php $no=1; @endphp
                                 @foreach($kecamatan as $data)
                                 <tr>
-                                    <td>{{$no++}}</td>
-                                    <td>{{$data->kota->nama_kota}}</td>
-                                    <td>{{$data->kode_kecamatan}}</td>
-                                    <td>{{$data->nama_kecamatan}}</td>
-                                    <td>
+                                    <td  scope="row">{{$no++}}</td>
+                                    <td  scope="row">{{$data->kota->nama_kota}}</td>
+                                    <td  scope="row">{{$data->kode_kecamatan}}</td>
+                                    <td  scope="row">{{$data->nama_kecamatan}}</td>
+                                    <td  scope="row">
                                         <form action="{{route('kecamatan.destroy',$data->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
@@ -58,7 +58,7 @@
             </div>
         </div>
         </div>
-
+</div>
     </div>
 </div>
 @endsection

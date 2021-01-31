@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-11">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Provinsi') }} 
                 </div>
@@ -13,6 +13,7 @@
                 <a href="{{route('provinsi.create')}}" class="btn btn-primary float-right"> Add Data </a>
 
                 <div class="card-body" >
+                <div class="table-responsive">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -22,20 +23,20 @@
                     <table class="table table-bordered" id="e">
                             <thead>
                                 <tr>
-                                    <th>Nomor</th>
-                                    <th>Kode Provinsi</th>
-                                    <th>Nama Provinsi</th>
-                                    <th>Action</th>
+                                    <th scope="col">Nomor</th>
+                                    <th scope="col">Kode Provinsi</th>
+                                    <th scope="col">Nama Provinsi</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @php $no=1; @endphp
                                 @foreach($provinsi as $data)
                                 <tr>
-                                    <td>{{$no++}}</td>
-                                    <td>{{$data->kode_provinsi}}</td>
-                                    <td>{{$data->nama_provinsi}}</td>
-                                    <td>
+                                    <td scope="row">{{$no++}}</td>
+                                    <td  scope="row">{{$data->kode_provinsi}}</td>
+                                    <td  scope="row">{{$data->nama_provinsi}}</td>
+                                    <td  scope="row">
                                         <form action="{{route('provinsi.destroy',$data->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
@@ -51,6 +52,8 @@
                             </tbody>
                         </table>
                 </div>
+                </div>
+</div>
             </div>
         </div>
     </div>

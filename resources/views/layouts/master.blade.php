@@ -39,7 +39,7 @@
             <div class="row" id="proBanner">
               <div class="col-12">
                 <span class="d-flex align-items-center purchase-popup">
-                 <a> annyeonghaseyo, Covid-19 web saiteue osin geos-eul hwan-yeonghabnida.</a>
+                 <a>Tracking Covid-19</a>
                   <i class="mdi mdi-close" id="bannerClose"></i>
                 </span>
               </div>

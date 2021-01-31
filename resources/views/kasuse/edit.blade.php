@@ -8,60 +8,46 @@
             <div class="card">
                 <div class="card-header">{{ __('Data Kasus') }} 
                 </div>
-                
                 <div class="card">
-             
-
                 <div class="card-body" >
-
-
                 <form  action="{{route('kasuse.update',$kasuse->id)}}" method="post">
                 <input type="hidden" name="_method" value="PUT">
                     @csrf
-                    
-                @livewireStyles
-
-                @livewireScripts
-                @method('PUT')
-                <div>
-                @livewire('select',['selectedRw'=> $kasuse->id_rw,
-                'selectedState4'=> $kasuse->r_w_->kelurahan->id_kelurahan,
-                'selectedState3'=> $kasuse->r_w_->kelurahan->kecamatan->id_kecamatan,
-                'selectedState2'=> $kasuse->r_w_->kelurahan->kecamatan->kota->id_kota,
-                'selectedState'=> $kasuse->r_w_->kelurahan->kecamatan->kota->provinsi->id_provinsi])
-                </div>
-
+                        <div class="row">
+                              <div class="col">
+                              @livewireStyles
+                                  @livewireScripts
+                                  @method('PUT')
+                                  <div>
+                                  @livewire('select',['selectedRw'=> $kasuse->id_rw,
+                                  'selectedState4'=> $kasuse->r_w_->kelurahan->id_kelurahan,
+                                  'selectedState3'=> $kasuse->r_w_->kelurahan->kecamatan->id_kecamatan,
+                                  'selectedState2'=> $kasuse->r_w_->kelurahan->kecamatan->kota->id_kota,
+                                  'selectedState'=> $kasuse->r_w_->kelurahan->kecamatan->kota->provinsi->id_provinsi])
+                                  </div>
+                                  </div>
+                        <div class="col">
                       <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Positif</label>
-                        <input  class="form-control" id="exampleInputPassword1" name="positif"
-                        value="{{$kasuse->positif}}"required>
+                        <label for="" class="form-label">Positif</label>
+                        <input  class="form-control"  name="positif" value="{{$kasuse->positif}}"required>
                     </div>
-                     </div>
                      <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Sembuh</label>
-                        <input  class="form-control" id="exampleInputPassword1" name="sembuh"
-                        value="{{$kasuse->sembuh}}"required>
+                        <label for="" class="form-label">Sembuh</label>
+                        <input  class="form-control"  name="sembuh" value="{{$kasuse->sembuh}}"required>
                     </div>
-                     </div>
                      <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Meninggal</label>
-                        <input  class="form-control" id="exampleInputPassword1" name="meninggal"
-                        value="{{$kasuse->meninggal}}"required>
+                        <label for="" class="form-label">Meninggal</label>
+                        <input  class="form-control"  name="meninggal" value="{{$kasuse->meninggal}}"required>
                     </div>
-                     </div>
                      <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Tanggal</label>
-                        <input type="date" class="form-control" id="exampleInputPassword1" name="tanggal"
-                        value="{{$kasuse->tanggal}}"required>
-                    </div>
-                     </div>
-                    <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                        <label for="" class="form-label">Tanggal</label>
+                        <input type="date" class="form-control"  name="tanggal" value="{{$kasuse->tanggal}}"required>
+                    </div>          
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
                 </form>
 
                 </div>

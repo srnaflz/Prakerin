@@ -1,69 +1,59 @@
 @extends('layouts.master')
 
 @section('content')
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Data Kasus') }} 
-                </div>
-                
-                <div class="card">
+                </div>                
+                <div class="card-body">
+                <form action="{{route('kasuse.store')}}" method="post">
+                        @csrf
+                        <div class="row">
 
-                <div class="card-body" >
-                  
-                <form  action="{{route('kasuse.store')}}" method="post">
-                <div>
-                @csrf
-                @livewireStyles
-                        @livewire('select')
-                @livewireScripts
-
-            
-                  <p><b><center>Status Kasus</center></b></p>
-                        <br>
-                    
+                            <div class="col">
+                            @livewireStyles
+                              @livewire('select')
+                             @livewireScripts
+                            </div>
+                            <div class="col">             
                       <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Positif</label>
-                        <input   value="{{@old('positif')}}" class="form-control" id="exampleInputPassword1" name="positif">
+                        <label for="">Positif</label>
+                        <input   value="{{@old('positif')}}" class="form-control"  name="positif">
                         @error('positif')
                       <div class="alert  alert-danger">{{$message}}</div>
                       @enderror
-                    </div>
-                     </div>
+                      </div>
+
                      <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Sembuh</label>
-                        <input   value="{{@old('sembuh')}}" class="form-control" id="exampleInputPassword1" name="sembuh">
+                        <label for="" >Sembuh</label>
+                        <input   value="{{@old('sembuh')}}" class="form-control"  name="sembuh">
                         @error('sembuh')
                       <div class="alert  alert-danger">{{$message}}</div>
                       @enderror
-                    </div>
                      </div>
+
                      <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Meninggal</label>
-                        <input   value="{{@old('meninggal')}}" class="form-control" id="exampleInputPassword1" name="meninggal">
+                        <label for="" >Meninggal</label>
+                        <input   value="{{@old('meninggal')}}" class="form-control"  name="meninggal">
                         @error('meninggal')
                       <div class="alert  alert-danger">{{$message}}</div>
                       @enderror
                     </div>
-                     </div>
+
                      <div class="form-group">
-                    <div class="mb-12>
-                        <label for="exampleInputPassword1" class="form-label">Tanggal</label>
-                        <input type="date"  value="{{@old('tanggal')}}" class="form-control" id="exampleInputPassword1" name="tanggal">
+                        <label for="" >Tanggal</label>
+                        <input type="date"  value="{{@old('tanggal')}}" class="form-control"  name="tanggal">
                         @error('tanggal')
                       <div class="alert  alert-danger">{{$message}}</div>
                       @enderror
-                    </div>
                      </div>
-                    <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
+                     
+                     <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

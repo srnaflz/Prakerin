@@ -12,43 +12,43 @@
                 <a href="{{route('kasuse.create')}}" class="btn btn-primary float-right"> Add Data </a>
 
                 <div class="card-body" >
-                    <div class="table-responsive">
+                <div class="table-responsive">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                             
                         </div>
                     @endif
-                    <table class="table table-dark table-hover " id ="e" >
+                    <table class="table table-bordered" id ="e" >
                             <thead>
                                 <tr>
-                                    <th>Nomor</th>
-                                    <th>Lokasi</th>
-                                    <th>Rw</th>
-                                    <th>Positif</th>
-                                    <th>Sembuh</th>
-                                    <th>Meninggal</th>
-                                    <th>Tanggal</th>
-                                    <th>Action</th>
+                                    <th scope="col">Nomor</th>
+                                    <th scope="col">Lokasi</th>
+                                    <th scope="col">Rw</th>
+                                    <th scope="col">Positif</th>
+                                    <th scope="col">Sembuh</th>
+                                    <th scope="col">Meninggal</th>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @php $no=1; @endphp
                                 @foreach($kasuse as $data)
                                 <tr>
-                                    <td>{{$no++}}</td>
-                                    <td>
+                                    <td  scope="row">{{$no++}}</td>
+                                    <td  scope="row">
                                     Provinsi  : {{$data->r_w_->kelurahan->kecamatan->kota->provinsi->nama_provinsi}}<br><br>
                                     Kota      : {{$data->r_w_->kelurahan->kecamatan->kota->nama_kota}}<br><br>
                                     Kecamatan : {{$data->r_w_->kelurahan->kecamatan->nama_kecamatan}}<br><br>
                                     Kelurahan : {{$data->r_w_->kelurahan->nama_kelurahan}}<br><br>
                                     </td>
-                                    <td>{{$data->r_w_->nama_rw}}</td>
-                                    <td>{{$data->positif}}</td>
-                                    <td>{{$data->sembuh}}</td>
-                                    <td>{{$data->meninggal}}</td>
-                                    <td>{{$data->tanggal}}</td>
-                                    <td>
+                                    <td  scope="row">{{$data->r_w_->nama_rw}}</td>
+                                    <td  scope="row">{{$data->positif}}</td>
+                                    <td  scope="row">{{$data->sembuh}}</td>
+                                    <td  scope="row">{{$data->meninggal}}</td>
+                                    <td  scope="row">{{$data->tanggal}}</td>
+                                    <td  scope="row">
                                         <form action="{{route('kasuse.destroy',$data->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
@@ -63,6 +63,7 @@
                                 @endforeach
                             </tbody>
                         </table>
+                    </div>  
                 </div>
             </div>
         </div>
