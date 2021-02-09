@@ -23,13 +23,7 @@
                                 @endforeach
                             </select>                 
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Kode Kecamatan</label>
-                        <input type="text" name="kode_kecamatan" value="{{@old('kode_kecamatan')}}" class="form-control" id="exampleInputPassword1" >
-                        @error('kode_kecamatan')
-                      <div class="alert  alert-danger">{{$message}}</div>
-                      @enderror
-                    </div>
+                   
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nama Kecamatan</label>
                         <input type="text" name="nama_kecamatan" value="{{@old('kode_kecamatan')}}" class="form-control" id="exampleInputPassword1" >

@@ -19,10 +19,7 @@
                         <label for="exampleInputEmail1">Nama Kota</label>
                         <input type="text" name="id_kota" value="{{$kecamatan->kota->nama_kota}}" class="form-control" readonly >
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Kode Kecamatan</label>
-                        <input type="text" name="kode_kecamatan" value="{{$kecamatan->kode_kecamatan}}" class="form-control" readonly >
-                    </div>
+                   
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nama Kecamatan</label>
                         <input type="text" name="nama_kecamatan" value="{{$kecamatan->nama_kecamatan}}" class="form-control" readonly >

@@ -46,12 +46,10 @@ class ProvinsiController extends Controller
     {
         //validasi
         $messages = [
-            'required' => 'Gaboleh Kosong Ya!',
-            'min' => 'Attributr Harus Diis Minimal : min karakter Ya Bro!!',
-            'max' => 'Attributr Harus Diis Maksimal : max karakter Ya Bro!!',
+            'required' => 'Gaboleh Kosong Ya!', 
         ];
         $this->validate($request,[
-            'kode_provinsi' => 'required|min:4|max:20',
+            'kode_provinsi' => 'required',
             'nama_provinsi' => 'required',
         ],$messages);
       //  $request->validate([

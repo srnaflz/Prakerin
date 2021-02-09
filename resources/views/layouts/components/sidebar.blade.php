@@ -42,7 +42,7 @@
                 <span class="menu-title">Kasus Global</span>
               </a>
                 <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Negara</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('negara.index')}}">Negara</a></li>
                   <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Kasus</a></li>
                 </ul>
             </li>

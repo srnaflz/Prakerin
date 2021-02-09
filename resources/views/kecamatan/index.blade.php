@@ -26,7 +26,6 @@
                                 <tr>
                                     <th scope="col">Nomor</th>
                                     <th scope="col">Nama Kota</th>
-                                    <th scope="col">kode Kecamatan</th>
                                     <th scope="col">Nama Kecamatan</th>
                                     <th scope="col">Action</th>
                                 </tr>
@@ -37,7 +36,6 @@
                                 <tr>
                                     <td  scope="row">{{$no++}}</td>
                                     <td  scope="row">{{$data->kota->nama_kota}}</td>
-                                    <td  scope="row">{{$data->kode_kecamatan}}</td>
                                     <td  scope="row">{{$data->nama_kecamatan}}</td>
                                     <td  scope="row">
                                         <form action="{{route('kecamatan.destroy',$data->id)}}" method="post">

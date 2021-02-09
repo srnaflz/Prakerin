@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend');
 });
 
 Auth::routes();
@@ -43,5 +43,10 @@ Route::resource('rw', RWController::class);
 
 use App\Http\Controllers\KasuseController;
 Route::resource('kasuse', KasuseController::class);
+
+//Global
+
+use App\Http\Controllers\NegaraController;
+Route::resource('negara', NegaraController::class);
 
 Route::view('states-city','livewire.home');

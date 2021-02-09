@@ -15,8 +15,8 @@ class CreateKelurahansTable extends Migration
     {
         Schema::create('kelurahans', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_kecamatan')->unsigned();
             $table->string('nama_kelurahan');
+            $table->bigInteger('id_kecamatan')->unsigned();
             $table->timestamps();
 
             $table->foreign('id_kecamatan')

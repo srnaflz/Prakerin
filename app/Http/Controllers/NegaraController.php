@@ -19,6 +19,8 @@ class NegaraController extends Controller
     public function index()
     {
         //
+        $negara = Negara::all();
+        return view('negara.index',compact('negara'));
     }
 
     /**
