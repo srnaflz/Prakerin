@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Admin</title>
+    <title>Covid-19</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('assets2/assets/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets2/assets/vendors/css/vendor.bundle.base.css')}}">
@@ -27,9 +27,9 @@
           <div class="row flex-grow">
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
-                <div class="brand-logo">
+                <!-- <div class="brand-logo">
                   <img src="{{asset('assets2/assets/images/logo.svg')}}">
-                </div>
+                </div> -->
                 <h4>Hello! let's get started</h4>
                 <h6 class="font-weight-light">Sign in to continue.</h6>
                 <form class="pt-3" action="{{route('login')}}" method="POST">

@@ -1,4 +1,4 @@
- <nav class="sidebar sidebar-offcanvas" id="sidebar">
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
@@ -35,24 +35,6 @@
                 </ul>
             </li>
       
-          
-
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                <span class="menu-title">Kasus Global</span>
-              </a>
-                <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route('negara.index')}}">Negara</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Kasus</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="pages/charts/chartjs.html">
-                <span class="menu-title">Charts</span>
-                <i class="mdi mdi-chart-bar menu-icon"></i>
-              </a>
-            </li>
-         
+                   
           </ul>
         </nav>

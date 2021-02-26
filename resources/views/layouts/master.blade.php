@@ -11,6 +11,8 @@
      <!-- data table -->
      <link rel="stylesheet" href="{{asset('assets2/assets/css/dataTables.bootstrap4.min.css')}}"/>
     <link rel="stylesheet" href="{{asset('assets2/assets/css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets2/assets/css/select2.min.css')}}"/>
+
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -96,10 +98,13 @@
     <script src="{{asset('assets2/assets/js/jquery-3.3.1.js')}}"></script>
     <script src="{{asset('assets2/assets/js/jquery.dataTables.min.js')}}"></script> 
     <script src="{{asset('assets2/assets/js/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('assets2/assets/js/select2.min.js')}}"></script>
+
   </body>
   <script>
 $(document).ready(function() {
     $('#e').DataTable();
+    $('.select2').select2();
 } );
 </script>
 </html> 

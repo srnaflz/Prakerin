@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend');
-});
+
+use App\Http\Controllers\ReportController;
+Route::resource('/', ReportController::class);
+
 
 Auth::routes();
 

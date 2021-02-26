@@ -1,215 +1,328 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Kross | Portfolio Template</title>
+  <head>
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="{{asset('front/plugins/bootstrap/bootstrap.min.css')}}">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="{{asset('front/plugins/slick/slick.css')}}">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="{{asset('front/plugins/themify-icons/themify-icons.css')}}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
-  <!-- Main Stylesheet -->
-  <link href="{{asset('front/css/style.css')}}" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="shortcut icon" href="{{asset('front/images/favicon.ico')}}" type="image/x-icon">
-  <link rel="icon" href="{{asset('front/images/favicon.ico')}}" type="image/x-icon">
+    <title>Covid-19</title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
 
-</head>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{{asset('front/css/bootstrap.min.css')}}">
 
-<body>
-  
+    <link rel="stylesheet" type="text/css" href="{{asset('front/css/font-awesome.css')}}">
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <link rel="stylesheet" href="{{asset('front/css/templatemo-softy-pinko.css')}}">
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- page title -->
-<section class="page-title-alt bg-primary ">
-  <div class="container">
-    <div class="row">
-      
-    </div>
-  </div>
-  <!-- background shapes -->
-
-</section>
-<!-- /page title -->
-
-<!-- about -->
-<section class="section pt-5">
-  <div class="container">
+    </head>
     
-  </div>
-</section>
-<!-- / -->
-<div class="row justify-content-around">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">Covid-19</h2>
-      </div>
-      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <div class="">
-          <img src="{{asset('front/images/icons/positif.jpg')}}" class="mb-4" alt="icon">
-          <h4 class="mb-4">Positif</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <img src="{{asset('front/images/icons/sembuh3.jpg')}}" class="mb-4" alt="icon">
-        <h4 class="mb-4">Sembuh</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.</p>
-      </div>
-      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <img src="{{asset('front/images/icons/meninggal.jpg')}}" class="mb-4" alt="icon">
-        <h4 class="mb-4">Meninggal</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.</p>
-      </div>
-    </div>
-
-<!-- clients -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">My Clients</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="client-logo-slider d-flex align-items-center">
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-1.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-2.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-3.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-4.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-5.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-1.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-2.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-3.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-4.png')}}" alt="client-logo"></a>
-          <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-              src="{{asset('front/images/clients-logo/client-logo-5.png')}}" alt="client-logo"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /clients -->
-
-<!-- contact -->
-<section class="section section-on-footer" data-background="{{asset('front/images/backgrounds/bg-dots.png')}}">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                </div>
             </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
         </div>
-      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" >
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-12 col-sm-12">
+                        <h1> <strong>Selamat Datang Di Tracking Covid-19</strong></h1>
+                        <h4> Webiste Data Corona Virus Di Indonesia dan Negara Lain<h4>
+                        
+                        <!-- <a href="#features" class="main-button-slider">Discover More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
     </div>
-  </div>
-</section>
-<!-- /contact -->
 
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+
+    
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Small Start ***** -->
+    <section class="section home-feature">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                
+                        <h1>Jumlah Kasus Corona Virus Di Indonesia</h1>
+                        <br>
+                    <div class="row">
+                        <!-- ***** Features Small Item Start ***** -->
+                        
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="features-small-item">
+                                    
+                                <h5 class="features-title">Total Positif</h5>
+                                <div class="count-item decoration-top">
+                                 <strong><h4>{{ $positif }}</h4></strong>
+                                 <span>Orang</span>
+                        </div>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="features-small-item">
+                                <div>
+                                </div>
+                                <h5 class="features-title">Total Sembuh</h5>
+                                <div class="count-item decoration-top">
+                                 <strong><h4>{{ $sembuh }}</h4></strong>
+                                 <span>Orang</span>
+                        </div>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="features-small-item">
+                                <h5 class="features-title">Total Meninggal</h5>
+                                <div class="count-item decoration-top">
+                                 <strong><h4>{{ $meninggal }}</h4></strong>
+                                 <span>Orang</span>
+                        </div>   
+                        
+                         </div>
+                        </div>
+                       
+                        <!-- ***** Features Small Item End ***** -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+880 2544 658 256</p>
+    </section>
+    <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+   
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section padding-bottom-100">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div clas=" col-md-12 ">
+            <div class="card">
+
+
+            <div class="card-body" >
+            <div class="table-responsive ">
+            
+            <div class="card-header">{{ __('Data Corona Virus Di Indonesia') }} 
+                            </div> 
+                            <table class="table table-bordered table-hover mb-0 text-nowrap css-serial " >
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Nomor</th>
+                                            <th scope="col">Provinsi</th>
+                                            <th scope="col">Positif</th>
+                                            <th scope="col">Meninggal</th>
+                                            <th scope="col">Sembuh</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        @php $no=1; @endphp
+                                        @foreach ($tampil as $data)
+                                        <tr>
+                                            <th scope="row">{{$no++}}</th>
+                                            <th scope="row">{{$data->nama_provinsi}}</th>
+                                            <th scope="row">{{$data->positif}}</th>
+                                            <th scope="row">{{$data->sembuh}}</th>
+                                            <th scope="row">{{$data->meninggal}}  </th>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                                      
+                        </div>
+                    </div>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+    </section>
+
+    
+    <!-- ***** Features Big Item End ***** -->
+ 
+    <!-- ***** Home Parallax Start ***** -->
+    <section class="mini" id="work-process">
+        <div class="mini-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                <div clas="col-sm12 col-md-12 col-lg-12 col-xl-14">
+                <?php
+                    $data = file_get_contents('https://api.kawalcorona.com/');
+                    $negara = json_decode($data, true);
+
+?>
+               
+                <div class="card">
+
+
+                <div class="card-body" >
+                <div class="table-responsive service ">
+            
+                <div class="card-header">{{ __('Data Corona Virus Di Dunia') }} 
+
+                </div> 
+                    <table class="table table-bordered table-hover mb-0 text-nowrap css-serial my-custom-scrollbar table-wrapper-scroll-y">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nomor</th>
+                                    <th scope="col">Negara</th>
+                                    <th scope="col">Positif</th>
+                                    <th scope="col">Meninggal</th>
+                                    <th scope="col">Sembuh</th>
+                                
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @php $no=1; @endphp
+                                @foreach($negara as $data)
+                                <tr>
+                                    <td scope="row">{{$no++}}</td>
+                                    <td  scope="row">{{$data['attributes']['Country_Region']}}</td>
+                                    <td  scope="row">{{$data['attributes']['Confirmed']}} </td>
+                                    <td  scope="row">{{$data['attributes']['Deaths']}} </td>
+                                    <td  scope="row">{{$data['attributes']['Recovered']}} </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                </div>
+                </div>
+
+               
+
+  </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> a theme by <a href="https://themefisher.com">themefisher.com</a></p>
-  </div>
-</footer>
-<!-- /footer -->
+    </div>
+</div>
+</div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Home Parallax End ***** -->
 
-<!-- jQuery -->
-<script src="{{asset('front/plugins/jQuery/jquery.min.js')}}"></script>
-<!-- Bootstrap JS -->
-<script src="{{asset('front/plugins/bootstrap/bootstrap.min.js')}}"></script>
-<!-- slick slider -->
-<script src="{{asset('front/plugins/slick/slick.min.js')}}"></script>
-<!-- filter -->
-<script src="{{asset('front/plugins/shuffle/shuffle.min.js')}}"></script>
+    <!-- ***** Testimonials Start ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">What is the corona virus?</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Quoted from Web MD, coronavirus is actually a common virus that is mostly harmless. The corona virus infects the nose, sinuses and upper throat. Even so, infection with several types of corona virus can actually have serious consequences.
 
-<!-- Main Script -->
-<script src="{{asset('front/js/script.js')}}"></script>
+The corona virus caused 585 deaths from Middle East respiratory syndrome (MERS), which first appeared in 2012 in Saudi Arabia. Previously in 2003, the corona virus caused 774 deaths due to Severe Acute Respiratory Syndrome (SARS).
 
-</body>
+At the end of January 2020, WHO identified 2019-nCoV in China. At the end of January 2020, there were about 300 identified cases in China. Each country has prepared prevention and security efforts, but the corona virus is still able to spread throughout the world.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+        </div>
+    </section>
+    <!-- ***** Testimonials End ***** -->
+
+    <!-- ***** Pricing Plans Start ***** -->
+   
+    <!-- ***** Pricing Plans End ***** -->
+
+    <!-- ***** Counter Parallax Start ***** -->
+    
+    <!-- ***** Counter Parallax End ***** -->   
+
+    <!-- ***** Blog Start ***** -->
+    <!-- ***** Blog End ***** -->
+
+    <!-- ***** Contact Us Start ***** -->
+    
+    <!-- ***** Contact Us End ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="{{asset('front/js/jquery-2.1.0.min.js')}}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{{asset('front/js/popper.js')}}"></script>
+    <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugins -->
+    <script src="{{asset('front/js/scrollreveal.min.js')}}"></script>
+    <script src="{{asset('front/js/waypoints.min.js')}}"></script>
+    <script src="{{asset('front/js/jquery.counterup.min.js')}}"></script>
+    <script src="{{asset('front/js/imgfix.min.js')}}"></script> 
+    
+    <!-- Global Init -->
+    <script src="{{asset('front/js/custom.js')}}"></script>
+
+  </body>
 </html>

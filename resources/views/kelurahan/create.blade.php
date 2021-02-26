@@ -17,7 +17,7 @@
                 @csrf <!-- untuk mengamankan data yang kita tambahkan -->
                 <div class="form-group">
                         <label for="exampleInputEmail1">Nama Kecamatan</label>
-                        <select name="id_kecamatan" class="form-control" required>
+                        <select name="id_kecamatan" class="form-control select2" required>
                                 @foreach($kecamatan as $data)
                                 <option value="{{$data->id}}">{{$data->nama_kecamatan}}</option>
                                 @endforeach
