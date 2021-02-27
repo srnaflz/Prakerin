@@ -58,7 +58,7 @@ https://templatemo.com/tm-535-softy-pinko
                 <div class="row">
                     <div class=" col-md-12 col-sm-12">
                         <h1> <strong>Selamat Datang Di Tracking Covid-19</strong></h1>
-                        <h4> Webiste Data Corona Virus Di Indonesia dan Negara Lain<h4>
+                        <h4> Website Data Corona Virus Di Indonesia dan Negara Lain<h4>
                         
                         <!-- <a href="#features" class="main-button-slider">Discover More</a> -->
                     </div>
