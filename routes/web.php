@@ -18,11 +18,10 @@ use App\Http\Controllers\ReportController;
 Route::resource('/', ReportController::class);
 
 
-Auth::routes();
+Auth::routes(['register'=> false, 'reset'=> false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('home');
 

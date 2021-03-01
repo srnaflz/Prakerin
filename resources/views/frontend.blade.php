@@ -190,8 +190,8 @@ https://templatemo.com/tm-535-softy-pinko
                 <div class="row justify-content-center">
                 <div clas="col-sm12 col-md-12 col-lg-12 col-xl-14">
                 <?php
-                    $data = file_get_contents('https://api.kawalcorona.com/');
-                    $negara = json_decode($data, true);
+                     $data = file_get_contents('https://api.kawalcorona.com/');
+                     $negara = json_decode($data, true);
 
 ?>
                

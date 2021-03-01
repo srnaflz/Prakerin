@@ -14,8 +14,6 @@ class KelurahanSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('kelurahans')->insert([
-            ['id' => 1, 'id_kecamatan']
-        ])
+    
     }
 }
