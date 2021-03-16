@@ -52,6 +52,7 @@
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-home"></i>
                 </span> Dashboard 
+                
               </h3>
             </div>
             <section class="content">
