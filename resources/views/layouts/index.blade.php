@@ -61,7 +61,54 @@
             </div>
             </section>
             
-           
+            <section class="section home-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                
+                                <h4 class="features-title">Positif</h4>
+                                <div class="count-item decoration-top">
+                                <strong><h4>{{ $positif }}</h4></strong>
+
+                                 <span>Orang</span></div>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                            <div class="features-small-item">
+                                
+                            <h4 class="features-title">Sembuh</h4>
+                                <div class="count-item decoration-top">
+                                <strong><h4>{{ $sembuh }}</h4></strong>
+
+                                 <span>Orang</span></div>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                            <div class="features-small-item">
+                                
+                            <h4 class="features-title">Meninggal</h4>
+                                <div class="count-item decoration-top">
+                                <strong><h4>{{ $meninggal }}</h4></strong>
+
+                                 <span>Orang</span></div>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->

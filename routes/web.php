@@ -18,7 +18,7 @@ use App\Http\Controllers\ReportController;
 Route::resource('/', ReportController::class);
 
 
-Auth::routes([ 'reset'=> false]);
+Auth::routes(['register'=> false, 'reset'=> false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

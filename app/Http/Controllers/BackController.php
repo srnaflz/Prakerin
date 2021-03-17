@@ -26,7 +26,7 @@ class BackController extends Controller
                'kasuses.sembuh', 'kasuses.meninggal')
                ->join('kasuses', 'r_w_s.id', '=', 'kasuses.id_rw')
                ->sum('kasuses.meninggal');
-               return view('layouts.master', compact('positif', 'sembuh', 'meninggal'));
+               return view('layouts.index', compact('positif', 'sembuh', 'meninggal'));
 
     }
 
