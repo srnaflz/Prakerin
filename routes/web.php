@@ -18,12 +18,12 @@ use App\Http\Controllers\ReportController;
 Route::resource('/', ReportController::class);
 
 
-Auth::routes(['register'=> false, 'reset'=> false]);
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('home');
+Route::get('/admin', [App\Http\Controllers\BackController::class, 'index']);
 
 use App\Http\Controllers\ProvinsiController;
 Route::resource('provinsi', ProvinsiController::class);
