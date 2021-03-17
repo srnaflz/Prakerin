@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProvinsiController;
+use App\Http\Controllers\KotaController;
+use App\Http\Controllers\KecamatanController;
+use App\Http\Controllers\KelurahanController;
+use App\Http\Controllers\RWController;
+use App\Http\Controllers\KasuseController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,38 +23,24 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\ReportController;
-Route::resource('/', ReportController::class);
+use App\Http\Controllers\BackController;
 
 
-Auth::routes(['register'=> false, 'reset'=> false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes([ 'register'=>false, 'reset'=> false]);
 
-
-Route::get('/admin', [App\Http\Controllers\BackController::class, 'index']);
-
-use App\Http\Controllers\ProvinsiController;
-Route::resource('provinsi', ProvinsiController::class);
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index']);
 
 
-use App\Http\Controllers\KotaController;
-Route::resource('kota', KotaController::class);
+Route::resource('/', ReportController::class); 
 
-use App\Http\Controllers\KecamatanController;
-Route::resource('kecamatan', KecamatanController::class);
-
-use App\Http\Controllers\KelurahanController;
-Route::resource('kelurahan', KelurahanController::class);
-
-use App\Http\Controllers\RWController;
-Route::resource('rw', RWController::class);
-
-use App\Http\Controllers\KasuseController;
-Route::resource('kasuse', KasuseController::class);
-
-//Global
-
-use App\Http\Controllers\NegaraController;
-Route::resource('negara', NegaraController::class);
-
-Route::view('states-city','livewire.home');
+Route::group(['prefix'=> 'admin', 'middleware'=> ['auth']], function ()
+{
+    Route::resource('/', BackController::class); 
+    Route::resource('provinsi', ProvinsiController::class);
+    Route::resource('kota', KotaController::class);
+    Route::resource('kecamatan', KecamatanController::class);
+    Route::resource('kelurahan', KelurahanController::class);
+    Route::resource('rw', RWController::class);
+    Route::resource('kasuse', KasuseController::class);
+});
