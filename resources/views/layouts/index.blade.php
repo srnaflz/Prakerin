@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,29 +41,26 @@
           <div class="content-wrapper">
             <div class="row" id="proBanner">
               <div class="col-12">
-                <span class="d-flex align-items-center purchase-popup">
-                 <a>Tracking Covid-19</a>
-                  <i class="mdi mdi-close" id="bannerClose"></i>
-                </span>
-              </div>
+               </div>
             </div>
             <!-- Dashboard -->
-            <div class="page-header">
-              <h3 class="page-title">
-                <span class="page-title-icon bg-gradient-primary text-white mr-2">
-                  <i class="mdi mdi-home"></i>
-                </span> Dashboard 
-              </h3>
-            </div>
-            
-            <section class="content">
-            <div class="containerfluid">
-            @yield('content')
-            </div>
-            </section>
             
             <section class="section home-feature">
         <div class="container">
+
+        <h3>Gejala Covid-19</h3>
+<br>
+            <div class="row">
+            <p>
+            <i><img src="{{asset('assets2/assets/images/gejala.jpg')}}" alt=""></i></p>
+                
+            </div>
+        </div>
+    </section>
+    <section class="section home-feature">
+        <div class="container">
+        <h3>Kasus Terpapar Covid-19 Di Indonesia</h3>
+        <br>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
@@ -72,8 +70,7 @@
                                 
                                 <h4 class="features-title">Positif</h4>
                                 <div class="count-item decoration-top">
-                                <strong><h4>{{ $positif }}</h4></strong>
-
+                                 <strong><h4>{{ $positif }}</h4></strong>
                                  <span>Orang</span></div>
                             </div>
                         </div>
@@ -85,8 +82,7 @@
                                 
                             <h4 class="features-title">Sembuh</h4>
                                 <div class="count-item decoration-top">
-                                <strong><h4>{{ $sembuh }}</h4></strong>
-
+                                 <strong><h4>{{ $sembuh }}</h4></strong>
                                  <span>Orang</span></div>
                             </div>
                         </div>
@@ -98,8 +94,7 @@
                                 
                             <h4 class="features-title">Meninggal</h4>
                                 <div class="count-item decoration-top">
-                                <strong><h4>{{ $meninggal }}</h4></strong>
-
+                                 <strong><h4>{{ $meninggal }}</h4></strong>
                                  <span>Orang</span></div>
                             </div>
                         </div>
@@ -109,6 +104,7 @@
             </div>
         </div>
     </section>
+    
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->

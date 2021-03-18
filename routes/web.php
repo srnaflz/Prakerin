@@ -29,7 +29,9 @@ use App\Http\Controllers\BackController;
 
 Auth::routes([ 'register'=>false, 'reset'=> false]);
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index']);
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
+// Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index']);
+
 
 
 Route::resource('/', ReportController::class); 
