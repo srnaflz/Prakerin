@@ -35,14 +35,17 @@ public function indonesia(){
                 ->join('kasuses', 'r_w_s.id', '=', 'kasuses.id_rw')
                 ->sum('kasuses.meninggal');
 
-
-    $res = [
-        'success' => true,
-        'data' => 'Data Kasus Indonesia',
+    $data = [
         'positif' => $positif,
         'sembuh' => $sembuh,
         'meninggal' => $meninggal,
-        'message' => 'Data Kasus Ditampilkan'
+    ];
+
+
+    $res = [
+        'success' => 200,
+        'data' => [$data],
+        'message' => 'Indonesia'
     ];
     return response()->json($res,200);
 }
