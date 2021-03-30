@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Provinsi extends Model
 {
     use HasFactory;
-    protected $table = "provinsis";
 
     protected $fillable = ['kode_provinsi', 'nama_provinsi'];
     public $timestamps = true;

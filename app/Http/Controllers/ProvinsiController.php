@@ -63,7 +63,7 @@ class ProvinsiController extends Controller
             //'nama_provinsi.unique'            => 'Nama sudah terdaftar.',
        //]);
         //menambahkan data
-        $provinsi = new Provinsi; //menampung model
+        $provinsi = new Provinsi(); //menampung model
         $provinsi->kode_provinsi  /*nama field*/ = $request->kode_provinsi; //name
         $provinsi->nama_provinsi  /*nama field*/ = $request->nama_provinsi; 
         $provinsi->save(); //untuk menyimpan data suatu inputan
