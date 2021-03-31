@@ -136,10 +136,6 @@ https://templatemo.com/tm-535-softy-pinko
     
     <!-- ***** Features Big Item Start ***** -->
     <section class="section padding-bottom-100">
-        <div class="container">
-            <div class="row justify-content-center">
-            <div clas=" col-md-12 ">
-            <div class="card">
 
 
             <div class="card-body" >
@@ -175,10 +171,7 @@ https://templatemo.com/tm-535-softy-pinko
                                       
                         </div>
                     </div>
-              </div>
-              </div>
-            </div>
-        </div>
+              
     
     </section>
     
@@ -191,7 +184,7 @@ https://templatemo.com/tm-535-softy-pinko
                 <div class="row">
                     <div class="offset-lg-3 col-lg-6">
                         <div class="info">
-                            <h1>Gejala Covid-19</h1>
+                            <h5>Gejala Covid-19</h5>
                             <p>Selama ini kita mengetahui bahwa gejala umum yang tejadi ketika terinfeksi Covid-19 ialah</p>
                             <i><img src="{{asset('front/images/gejala.jpg')}}" alt=""></i>
 
@@ -210,16 +203,19 @@ https://templatemo.com/tm-535-softy-pinko
         <div class="row">
                 <div class="col-lg-12">
                     <div class="center-heading">
-                        <h2 class="section-title">What is the corona virus?</h2>
+                        <h2 class="section-title">Penyebab Covid-19?</h2>
                     </div>
                 </div>
                 <div class="offset-lg-3 col-lg-6">
                     <div class="center-text">
-                        <p>Quoted from Web MD, coronavirus is actually a common virus that is mostly harmless. The corona virus infects the nose, sinuses and upper throat. Even so, infection with several types of corona virus can actually have serious consequences.
+                        <h4 align="left">COVID-19 disebabkan oleh SARS-CoV-2, yaitu virus jenis baru dari coronavirus (kelompok virus yang menginfeksi sistem pernapasan). Infeksi virus Corona bisa menyebabkan infeksi pernapasan ringan sampai sedang, seperti flu, atau infeksi sistem pernapasan dan paru-paru, seperti pneumonia.
 
-The corona virus caused 585 deaths from Middle East respiratory syndrome (MERS), which first appeared in 2012 in Saudi Arabia. Previously in 2003, the corona virus caused 774 deaths due to Severe Acute Respiratory Syndrome (SARS).
+COVID-19 awalnya ditularkan dari hewan ke manusia. Setelah itu, diketahui bahwa infeksi ini juga bisa menular dari manusia ke manusia. Penularannya bisa melalui cara-cara berikut:
 
-At the end of January 2020, WHO identified 2019-nCoV in China. At the end of January 2020, there were about 300 identified cases in China. Each country has prepared prevention and security efforts, but the corona virus is still able to spread throughout the world.</p>
+Tidak sengaja menghirup percikan ludah (droplet) yang keluar saat penderita COVID-19 bersin atau batuk
+Memegang mulut, hidung, atau mata tanpa mencuci tangan terlebih dulu, setelah menyentuh benda yang terkena droplet penderita COVID-19
+Kontak jarak dekat (kurang dari 2 meter) dengan penderita COVID-19 tanpa mengenakan masker
+CDC dan WHO menyatakan COVID-19 juga bisa menular melalui aerosol (partikel zat di udara). Meski demikian, cara penularan ini hanya terjadi dalam prosedur medis tertentu, seperti bronkoskopi, intubasi endotrakeal, hisap lendir, dan pemberian obat hirup melalui nebulizer.</h4>
                     </div>
                 </div>
           

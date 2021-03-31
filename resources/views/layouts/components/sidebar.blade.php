@@ -16,7 +16,7 @@
             </li>
          
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/admin') }}">
+              <a class="nav-link" href="{{ url('/home') }}">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
