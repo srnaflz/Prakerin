@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,70 +40,22 @@
           <div class="content-wrapper">
             <div class="row" id="proBanner">
               <div class="col-12">
-               </div>
+                <span class="d-flex align-items-center purchase-popup">
+                 <a>Tracking Covid-19</a>
+                  <i class="mdi mdi-close" id="bannerClose"></i>
+                </span>
+              </div>
             </div>
             <!-- Dashboard -->
             
-            <section class="section home-feature">
-        <div class="container">
-
-        <h3>Gejala Covid-19</h3>
-<br>
-            <div class="row">
-            <p>
-            <i><img src="{{asset('assets2/assets/images/gejala.jpg')}}" alt=""></i></p>
-                
+            
+            <section class="content">
+            <div class="containerfluid">
+            @yield('content')
             </div>
-        </div>
-    </section>
-    <section class="section home-feature">
-        <div class="container">
-        <h3>Kasus Terpapar Covid-19 Di Indonesia</h3>
-        <br>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                            <div class="features-small-item">
-                                
-                                <h4 class="features-title">Positif</h4>
-                                <div class="count-item decoration-top">
-                                 <strong><h4>{{ $positif }}</h4></strong>
-                                 <span>Orang</span></div>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
-
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                            <div class="features-small-item">
-                                
-                            <h4 class="features-title">Sembuh</h4>
-                                <div class="count-item decoration-top">
-                                 <strong><h4>{{ $sembuh }}</h4></strong>
-                                 <span>Orang</span></div>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
-
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                            <div class="features-small-item">
-                                
-                            <h4 class="features-title">Meninggal</h4>
-                                <div class="count-item decoration-top">
-                                 <strong><h4>{{ $meninggal }}</h4></strong>
-                                 <span>Orang</span></div>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+            </section>
+            
+           
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
