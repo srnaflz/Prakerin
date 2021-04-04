@@ -27,7 +27,7 @@ use App\Http\Controllers\BackController;
 
 
 
-Auth::routes([ 'register'=>false, 'reset'=> false]);
+Auth::routes([  'reset'=> false]);
 
  Route::get('/home', [App\Http\Controllers\BackController::class, 'index']);
 // Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index']);
